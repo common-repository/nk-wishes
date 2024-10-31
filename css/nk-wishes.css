@@ -1,0 +1,150 @@
+.nk-wishes-form-spinner {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  visibility: hidden;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+/* Styled Form */
+.nk-wishes-form-styled input,
+.nk-wishes-form-styled textarea {
+  margin-bottom: 20px;
+}
+.nk-wishes-form-styled .nk-wishes-form-warning,
+.nk-wishes-form-styled .nk-wishes-form-success {
+  margin-bottom: 20px;
+}
+.nk-wishes-form-styled .nk-wishes-form-warning {
+  color: #FFA901;
+}
+.nk-wishes-form-styled .nk-wishes-form-success {
+  color: #36DC24;
+}
+
+
+
+/* Styled Wishes List */
+.nk-wish-styled {
+  position: relative;
+  border: 1px solid rgb(194, 194, 194);
+  padding: 30px;
+  padding-top: 50px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.nk-wish-styled + .nk-wish-styled {
+  margin-top: 80px;
+}
+.nk-wish-styled .nk-wish-author-photo {
+  position: absolute;
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  left: 50%;
+  top: 0;
+  margin: 0 auto;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.nk-wish-styled .nk-wish-author-name {
+  text-align: center;
+  font-size: 20px;
+  line-height: 1;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 30px;
+  margin-top: 40px;
+}
+.nk-wish-styled blockquote {
+  border-left: none;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  text-align: center;
+}
+.nk-wishes-pager {
+  padding-left: 0;
+  margin: 30px 0;
+  list-style: none;
+}
+.nk-wishes-pager:after,
+.nk-wishes-pager:before {
+  content: '';
+  display: table;
+}
+.nk-wishes-pager:after {
+  clear: both;
+}
+.nk-wishes-pager li {
+  display: inline;
+}
+.nk-wishes-pager .next > a,
+.nk-wishes-pager .next > span {
+  float: right;
+}
+.nk-wishes-pager li > a,
+.nk-wishes-pager li > span {
+  display: inline-block;
+  color: #707070;
+  text-decoration: none;
+  margin: 0;
+  border: none;
+}
+.nk-wishes-pager li > a:hover {
+  color: #222;
+}
+
+
+
+/**
+ * nK Spinner
+ * http://codepen.io/_nK/pen/GobwqW?editors=1100
+ */
+.nk-wishes-spinner {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.3);
+}
+.nk-wishes-spinner i {
+  position: absolute;
+  display: block;
+  width: 7px;
+  height: 7px;
+  overflow: hidden;
+  -webkit-transform-origin: 10px 10px;
+          transform-origin: 10px 10px;
+  -webkit-animation: nk-wishes-spinner 0.7s infinite linear;
+          animation: nk-wishes-spinner 0.7s infinite linear;
+}
+.nk-wishes-spinner i:after {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 2px #000;
+}
+
+@-webkit-keyframes nk-wishes-spinner {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes nk-wishes-spinner {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
